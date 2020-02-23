@@ -1,0 +1,10 @@
+package KieRule;
+import com.app.data.Order;
+
+rule "HDFC"
+when
+ order:Order(cardType=="HDFC")
+then
+ System.out.println("hello");
+ order.setDiscount(8);
+end;

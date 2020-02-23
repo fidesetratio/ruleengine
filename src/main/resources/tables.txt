@@ -1,0 +1,7 @@
+create table rules(
+	rule_id int not null auto_increment,
+	rule_key varchar(200) not null default '',
+	rule_content text not null,
+	rule_version varchar(200) not null default '',
+	primary key(rule_id)
+);
